@@ -1,0 +1,20 @@
+name: date_holidays
+description: >-
+  Offline public holidays and business days for Dart and Flutter, with
+  Islamic holidays calculated per country (Türkiye: Diyanet) and half-days.
+version: 0.1.0
+repository: https://github.com/zahidtekbas/date_holidays
+issue_tracker: https://github.com/zahidtekbas/date_holidays/issues
+topics:
+  - holidays
+  - calendar
+  - date
+  - hijri
+  - business-days
+
+environment:
+  sdk: ^3.5.0
+
+dev_dependencies:
+  lints: ^5.0.0
+  test: ^1.25.0
