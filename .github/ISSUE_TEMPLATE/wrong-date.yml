@@ -1,0 +1,36 @@
+name: Wrong or missing date
+description: A holiday is on the wrong day, missing, or should not be there.
+labels: [data]
+body:
+  - type: input
+    id: country
+    attributes:
+      label: Country
+      placeholder: TR
+    validations:
+      required: true
+  - type: input
+    id: holiday
+    attributes:
+      label: Holiday id or name
+      placeholder: tr.ramazan-bayrami
+    validations:
+      required: true
+  - type: input
+    id: dates
+    attributes:
+      label: Date returned by the package, and the correct date
+      placeholder: "Returned 2030-02-05, correct 2030-02-04"
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Official source
+      description: A link to the law, government gazette, ministry or Diyanet. Wikipedia and other holiday libraries are not sources.
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything else

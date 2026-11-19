@@ -1,0 +1,22 @@
+name: Bug in the code
+description: Something other than holiday data behaves wrongly.
+labels: [bug]
+body:
+  - type: textarea
+    id: repro
+    attributes:
+      label: Code that shows the problem
+      render: dart
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected and what happened
+    validations:
+      required: true
+  - type: input
+    id: versions
+    attributes:
+      label: Package and Dart SDK versions
+      placeholder: date_holidays 0.1.0, Dart 3.13.3

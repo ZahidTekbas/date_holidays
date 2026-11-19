@@ -1,0 +1,34 @@
+name: New country
+description: Ask for a country, or say you are adding one.
+labels: [country]
+body:
+  - type: input
+    id: country
+    attributes:
+      label: Country (ISO 3166-1 alpha-2)
+      placeholder: SA
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Official source for the holidays
+      description: The law or government page that defines them.
+    validations:
+      required: true
+  - type: dropdown
+    id: islamic
+    attributes:
+      label: How the country decides Islamic dates (if it has any)
+      options:
+        - Not applicable
+        - Published table (e.g. Umm al-Qura)
+        - Calculated criterion (e.g. MABIMS)
+        - Local moon sighting
+        - Not sure
+  - type: checkboxes
+    id: pr
+    attributes:
+      label: Contribution
+      options:
+        - label: I plan to open a pull request (see CONTRIBUTING.md)
